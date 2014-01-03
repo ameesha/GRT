@@ -8,4 +8,12 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Watchu Want?" />
+    
+    <Button android:id="@+id/test_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="I don't care"
+        android:onClick="doSomething"/>
+    
+    
 </LinearLayout>
