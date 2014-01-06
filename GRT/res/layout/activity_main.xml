@@ -1,19 +1,61 @@
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<!-- <?xml version="1.0" encoding="utf-8"?>
+<fragment xmlns:android="http://schemas.android.com/apk/res/android"
+          android:id="@+id/map"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:name="com.google.android.gms.maps.MapFragment"/> -->
+
+ <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical" >
+    android:orientation="vertical">
     
-    <EditText android:id="@+id/test_text"
+     <AutoCompleteTextView android:id="@+id/route_wanted"
+         android:layout_width="match_parent"
+         android:layout_height= "0dip"
+         android:layout_weight= "16"
+         android:hint="Type Bus Number Here"
+     />
+     
+     <Button android:id="@+id/route_wanted_button"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:text="Submit" />
+         <!-- android:layout_weight="16" -->
+         
+     
+     <EditText android:id="@+id/stopNumber_wanted"
+         android:layout_width="match_parent"
+         android:layout_height= "0dip"
+         android:layout_weight= "33"
+         android:hint="Type Stop Number Here"
+     />
+     
+     <EditText android:id="@+id/route_favourite"
+         android:layout_width="match_parent"
+         android:layout_height= "0dip"
+         android:layout_weight= "33"
+         android:hint="Type Favourite Bus Number Here"
+     />
+     
+    <!--
+     <fragment android:id="@+id/map"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:name="com.google.android.gms.maps.MapFragment"/> -->
+   
+     
+<!--    <EditText android:id="@+id/test_text"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Watchu Want?" />
+        android:hint="What's Your Name?" />
     
     <Button android:id="@+id/test_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="I don't care"
-        android:onClick="doSomething"/>
+        android:text="I don't care" 
+        android:onClick="forBryan"/> -->
     
     
 </LinearLayout>
